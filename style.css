@@ -1,0 +1,361 @@
+
+@charset "utf-8";
+
+@page { 
+	size: 21.0 29.7; 
+}
+
+
+
+/* ----------- @FONT-FACE ----------- */
+
+@font-face{
+	font-family: "libertine_bolditalic";
+	font-weight:  normal;
+	font-style:  normal;
+	src:  url("Fonts/LinLibertine_BI-4.1.0.ttf");
+}
+
+@font-face{
+	font-family: "libertine_bold";
+	font-weight:  normal;
+	font-style:  normal;
+	src:  url("Fonts/LinLibertine_Bd-4.1.5.ttf");
+}
+
+@font-face{
+	font-family: "libertine_it";
+	font-weight:  normal;
+	font-style:  normal;
+	src:  url("Fonts/LinLibertine_It-4.2.6.ttf");
+}
+
+@font-face{
+	font-family: "libertine_reg";
+	font-weight:  normal;
+	font-style:  normal;
+	src:  url("Fonts/LinLibertine_Re-4.7.5.ttf");
+}
+
+@font-face{
+	font-family: "vera_mono_reg";
+	font-weight:  normal;
+	font-style:  normal;
+	src:  url("Fonts/VeraMono.ttf");
+}
+
+@font-face{
+	font-family: "vera_mono_it";
+	font-weight:  normal;
+	font-style:  normal;
+	src:  url("Fonts/VeraMoIt.ttf");
+}
+
+@font-face{
+	font-family: "vera_mono_bold";
+	font-weight:  normal;
+	font-style:  normal;
+	src:  url("Fonts/VeraMoBd.ttf");
+}
+
+@media screen, print{
+/* ----------- DISPLAY: NONE ----------- */
+
+.bandeau-icone, .magnify, #mw-navigation, #footer, .noprint, #siteSub, #toc, .navigation-only, #contentSub, .homonymie, .icone_de_titre, .Liens_externes, .mw-hidden-catlinks, a[title="Modèle: Wikiprojet"], .mw-talkpageheader, #localNotice{
+	display: none;
+}
+
+
+
+/* ----------- CONTENU ----------- */
+
+body{
+	font-family: "libertine_reg";
+	position: relative;
+	display: block;
+	margin: 0cm;
+	font-size: 8.5pt;
+	height: 28.5cm;
+}
+
+#cln{
+	column-width:  8.3cm;
+	-moz-column-width:  8.3cm;
+	-webkit-column-width:  8.3cm;
+	-ms-column-width:  8.3cm;
+	column: 2;
+	-moz-column: 2; /* Firefox */
+	-webkit-column: 2; /* Safari & Chrome */
+	-ms-column:  2;	
+	
+}
+
+#content{
+
+}
+
+
+p, ul, ol{
+	margin: 0;
+}
+
+/* ----------- LISTES ----------- */
+
+ul{
+	list-style-type:  circle;
+	margin-left: -0.4cm;
+}
+
+p{
+	text-indent: 0.3cm;
+}
+
+b, h1, h2, h3, h4, .mw-headline{
+	font-weight: normal;
+	font-family: "libertine_bold";
+}
+
+h1, h2, h3, h4, h5{
+	column-break-after: avoid;
+	-moz-column-break-after: avoid;	
+	-webkit-column-break-after: avoid;	
+	-ms-column-break-after: avoid;	
+	page-break-after: avoid;
+	-moz-page-break-after: avoid;	
+	-webkit-page-break-after: avoid;	
+	-ms-page-break-after: avoid;		
+}
+
+h2, h3{
+	font-size: 10pt;
+}
+
+h1, h3, h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+h2, .mw-headline{
+	margin-bottom: 0;
+}
+
+h3{
+	font-size: 8.5;
+}
+
+.reference{
+	vertical-align:  super; 
+	font-size:  70%; 
+	line-height:  85%;
+}
+
+blockquote{
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "libertine_it";
+}
+
+blockquote p{
+	text-indent: 0cm;
+}
+
+pre, code{
+	display: inline;
+	white-space: pre-wrap;
+	font-family: "vera_mono_reg";
+	font-size: 7.5pt;
+}
+
+/* ----------- IMAGES & LÉGENDES ----------- */
+
+.thumb, .thumbinner, .thumbimage{
+	width: 8.3cm;
+} 
+
+.thumbimage, center{
+	margin-top: 0.2cm;
+	margin-left: 0.3cm;
+}
+
+.thumbcaption{
+	margin-top: 0;
+	margin-left: 0.3cm;
+	margin-bottom: 0.2cm;
+}
+
+center, .thumbcaption, .gallerytext{
+	font-family: "vera_mono_reg";
+	font-size: 6.5pt;
+	line-height: 120%;
+	width: 7.7cm;
+}
+
+/* ----------- LIENS ----------- */
+
+a{
+	color: black;
+	text-decoration: none;
+	font-family: "libertine_it";
+} 
+a.image{
+	border: 0px;
+}
+
+a.image img{
+		max-width: 7.7cm;
+		max-height: 20cm;
+}
+
+center a, .thumbcaption a{
+	font-family: "vera_mono_it";
+	text-align: left;
+}
+
+/* ----------- TABLEAUX ----------- */
+
+table[class], table[cellpadding]{
+	width: 8.3cm;	
+	margin-top: 0.2cm;
+	margin-left: 0.3cm;
+	margin-bottom: 0.2cm;
+}
+
+    
+table{
+	font-family: "vera_mono_reg";
+	font-size: 6.5pt;
+	line-height: 120%;
+	border: 1px solid black;
+	table-layout:  fixed; 
+	white-space: wrap;	
+	word-wrap: break-word;	
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+	display:block;
+	border-collapse:collapse;	
+
+}
+.wikitable, .wikitable tbody {
+	border:0;
+}
+
+.wikitable, .wikitable tbody, .wikitable tr{
+	display: block;
+}
+
+.wikitable caption{
+	display: inline;	
+}
+
+table, tbody, tr, td, th, hr, table ul, table li{
+    page-break-inside: auto;
+	column-break-inside: auto;
+	-moz-column-break-inside: auto;	
+	-webkit-column-break-inside: auto;	
+	-ms-column-break-inside: auto;	
+	page-break-inside: auto;
+	-moz-page-break-inside: auto;	
+	-webkit-page-break-inside: auto;	
+	-ms-page-break-inside: auto;	
+	column-break-inside: auto;
+	-moz-column-break-inside: auto;	
+	-webkit-column-break-inside: auto;	
+	-ms-column-break-inside: auto;	
+	page-break-inside: auto;
+	-moz-page-break-inside: auto;	
+	-webkit-page-break-inside: auto;	
+	-ms-page-break-inside: auto;	
+	}
+	
+table tr, table tr a, table dl i, table dl a{
+	font-weight: normal;
+	font-family: "vera_mono_reg";
+	text-align: left;
+}
+
+table th, table th a, strong, table b, table b a{
+	font-weight: normal;
+	font-family: "vera_mono_bold";
+	text-align: left;
+}
+
+table ul{
+	list-style: none;
+	margin-left: -1cm;
+	font-size: 6pt;
+}
+
+table div{
+	padding: 0 0.25em;
+	border: 1px solid black;
+}
+
+.infobox_v1 div, .infobox_v2 div, .infobox_v3 div {
+	border:0;
+}
+
+hr{
+	color: black;
+	background-color: black;	
+}
+
+.wikitable{
+	border:0;
+	border-collapse:collapse;	
+}
+
+
+.wikitable tr, .wikitable td, .wikitable th{
+	border: 1px solid black;
+}
+
+td{
+	text-align: left;
+}
+
+.mwe-math-fallback-png-inline, tex{
+	margin: auto;
+	max-width: 7cm;
+}
+
+
+.printfooter, #catlinks{
+	font-family: "libertine_it";
+	margin-top: 0.2cm;
+	margin-left: 0.3cm;
+}
+
+#catlinks{
+	padding-bottom:0.2cm;
+	margin-bottom:0.8cm;
+
+}
+
+
+/* ----------- INDEX DES ARTICLES ----------- */
+
+
+#index, .pagebreak{
+	page-break-after: always;
+	-moz-page-break-after: always;	
+	-webkit-page-break-after: always;	
+	-ms-page-break-after: always;		
+}
+
+.pagebreakbefore{
+	page-break-before: always;
+	-moz-page-break-before: always;	
+	-webkit-page-break-before: always;	
+	-ms-page-break-before: always;	
+}
+
+#index li {
+	list-style-type: decimal;
+}
+
+.pagebreak, .pagebreakbefore{
+	visibility: hidden;
+}
