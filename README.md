@@ -1,7 +1,7 @@
 WikiPapier
 ==========
 
-Generate a custom printable encyclopædia from Wikipedia articles. 
+Generate a custom printable encyclopædia from Wikipedia articles as pdf. 
 
 Try it [here](http://etienneozeray.fr/wikipapier) and see how it looks like [here](http://etienneozeray.fr/wikipapier.php).
 
